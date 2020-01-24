@@ -136,12 +136,17 @@ body {
   background-color: whitesmoke;
   color: whitesmoke;
   font-size: 1.18em;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 .flex {
   display: flex;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 p {
   line-height: 140%;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 hr {
   width: 80%;
@@ -291,8 +296,9 @@ hr {
 .contact h2 {
   font-size: 2em;
   border-bottom: 0.3em solid #333;
-  width: 25%;
+  width: 26%;
   margin-left: 0;
+  text-align: center;
 }
 .contact h2:hover {
   border-bottom: 0.3em solid #B22222;

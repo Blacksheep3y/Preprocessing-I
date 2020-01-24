@@ -58,6 +58,7 @@ html, body {
 	background-color: @ws;
 	color: @ws;
 	font-size: 1.18em;
+	font-family: @ff;
 }
 
 // MY CODE STARTS HERE
@@ -66,13 +67,19 @@ html, body {
 @333: #333;
 @B22: #B22222;
 @ws: whitesmoke;
+@ff: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
 //All my Mixins
 .flex {
 	display: flex;
 }
+.wrap {
+	flex-wrap: wrap;
+}
 //Global Styling
 p {
 	line-height: 140%;
+	font-family: @ff;
 
 }
 hr {
@@ -161,10 +168,10 @@ hr {
 	}
 	div {
 		.flex();
-		flex-wrap: wrap;
+		.wrap();
 		div {
 			.flex();
-			flex-wrap: wrap;
+			.wrap();
 			width: 50%;
 			padding: 2%;
 			h3 {
@@ -220,23 +227,24 @@ hr {
 	width: 80%;
 	margin: 5% auto;
 	border: 0.5em solid @B22;
+	padding: 2%;
 	&:hover {
 		border: 0.5em solid @333; 
 	}
-	padding: 2%;
 	h2, h3 {
 		margin: 2% auto;
 	}
-	h2{
+	h2 {
 		font-size: 2em;
 		border-bottom: 0.3em solid @333;
-		width: 25%;
+		width: 26%;
 		margin-left: 0;
+		text-align: center;
 		&:hover {
 			border-bottom: 0.3em solid @B22;
 		}
 	}
-	div{
+	div {
 		margin-top: 5%;
 	}
 }
